@@ -12,7 +12,7 @@ public class SwitchExample {
         String calificativ = scan.next();
 
         // System.out.println ("test".toUpperCase);
-        switch(calificativ.toUpperCase(){
+        switch(calificativ.toUpperCase()){
 
             case "A":
                 System.out.println("great");
