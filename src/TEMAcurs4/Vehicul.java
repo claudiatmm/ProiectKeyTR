@@ -15,9 +15,6 @@ public class Vehicul {
         return motorizareVehicul;
     }
 
-//    public void detaliiVehicul (String vehicul, int nivelP, int vitezaV ){
-//        System.out.println("Nivelul de poluare pentru " + vehicul + "este " + nivelP + " si viteza medie atinsa este de" +  vitezaV );
-//    }
 
     public void detaliiVehicul (){
         System.out.println("Nivelul de poluare pentru " + getBrand() + " este " + getNivelPoluare() + " si viteza medie atinsa este de " +  getVitezaMedie() );
