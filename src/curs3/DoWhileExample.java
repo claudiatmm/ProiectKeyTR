@@ -10,7 +10,8 @@ public class DoWhileExample {
         while(j< array.length){
             System.out.println(array[j]);
             j++;
-    }
+        }
+
         int x =0;
         do{
             System.out.println(array[x]);

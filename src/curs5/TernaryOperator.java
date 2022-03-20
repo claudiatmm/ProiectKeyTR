@@ -9,6 +9,7 @@ public class TernaryOperator {
 
         int var = (num1>num2) ? num1 : num2;
         //este echivalentul liniei de mai sus
+
         if(num1>num2) {
             var =  num1;
         }else {

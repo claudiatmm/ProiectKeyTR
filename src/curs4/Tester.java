@@ -1,4 +1,4 @@
-package Curs4;
+package curs4;
 
 public class Tester extends Angajat {
 
