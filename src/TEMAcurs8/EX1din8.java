@@ -55,18 +55,14 @@ public class EX1din8 {
 
     // Avem o metoda care citeste si din properties file(in cazul meu: fisierLegume) valoarea caloriilor.
 
-    public static void citestePropInFisier() throws IOException {
-         try {
+    public Properties citestePropInFisier() throws IOException, FileNotFoundException {
+
             InputStream inputStream = new FileInputStream("/KeyTrainingProject/src/TEMAcurs8/fisierLegume.txt");
 
             Properties file = new Properties();
             file.load(inputStream);
 
-
-          } catch (FileNotFoundException e) {
-             e.printStackTrace();
-         }
-
+            return file;
     }
 
 
@@ -74,27 +70,22 @@ public class EX1din8 {
     // Avem o metoda care pune intr-un data structure tip cheie valoare
     // legumele si caloriile citite din properties file si returneaza caloriile.
 
-    public static String returneazaDataStructure() {
+    public void returneazaDataStructure(String abc) throws IOException {
         HashMap<String, String> proprietati = new HashMap<String, String>();
 
-        citestePropInFisier().
-        proprietati.put(citestePropInFisier());
+        Properties aux = citestePropInFisier();        // pot sa folosesc cu -this sau fara
 
-
-        System.out.println(proprietati);
-
-        //sa vad keye /valoare
-        for (String k : proprietati.keySet()) {
-            System.out.println(k + "valori:"+proprietati.get(k));
+        for(String leguma :aux.stringPropertyNames()){
+            proprietati.put(leguma, aux.getProperty(leguma));
+        }
+        if (proprietati.containsKey(abc)){
+            System.out.println("Leguma aleasa de tine are " +(proprietati.get(abc))+ " calorii");
+        }
+        else{
+            System.out.println("Nu vindem aceasta leguma");
         }
 
-        return
     }
-
-
-
-
-
 
 }
 

@@ -1,5 +1,5 @@
 #am salvat fisierul
-#Sun Mar 20 12:40:42 EET 2022
-morcov=12
+#Mon Mar 21 19:59:54 EET 2022
+morcov=52
 mar=45
 struguri=160

@@ -1,6 +1,7 @@
 package TEMAcurs8;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class RunTheEX8 {
@@ -14,6 +15,9 @@ public class RunTheEX8 {
 
         EX1din8 runExemple = new EX1din8(legumaUser);
         runExemple.scriuProprietatiInFisier();
+        runExemple.citestePropInFisier();
+
+        runExemple.returneazaDataStructure(legumaUser);
 
 
 

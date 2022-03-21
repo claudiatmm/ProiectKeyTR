@@ -30,15 +30,15 @@ public class EX4 {
 //            if ((password.equals(10)) && (password.toUpperCase().equals(1)) && (password.equalsIgnoreCase(username)){
 //
 //            }
+            boolean areLiteraMare = false;
 
             for (int i=0; i<= password.length(); i++){
                 if (password.length()< 10){
                 System.out.println("Trebuie minim 10 char");
                     break;
                 }
-                 else if (password.toLowerCase().charAt(i) < 1) {
-                System.out.println("Trebuie un UpperCase");
-                    break;
+                 else if (65>= password.charAt(i) && password.charAt(i) <= 90) {
+                    areLiteraMare = true;
                 }
 
                  else if (password.equals(username)){
@@ -50,6 +50,9 @@ public class EX4 {
                  System.out.println("parola ok");
                   }
                  break;
+            }
+            if (!areLiteraMare) {
+                System.out.println("trebuie majuscula");
             }
 
 
